@@ -16,7 +16,7 @@ PHP Script that retrieve accounts balances from various exchanges and save them 
 - Install all the requirements
 - Edit config file to your needs
 - Enable UDP in Grafana config
-- Create Crypto DB in influxDB
+- Create a DB named Crypto in influxDB
 - Setup a crontab / scheduled task to run Portfolio.php every 1min. 
 - Import the example Dashboard in Grafana or create your own. 
 
