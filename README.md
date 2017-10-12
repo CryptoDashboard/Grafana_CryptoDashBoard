@@ -20,6 +20,11 @@ PHP Script that retrieve accounts balances from various exchanges and save them 
 - Setup a crontab / scheduled task to run Portfolio.php every 1min. 
 - Import the example Dashboard in Grafana or create your own. 
 
+# Usage
+
+- Create the required API on the exchanges you're using. Only read access to balances/ledgers is needed. 
+- Use CoinMarketCap.php or edit the json file to add the additionals currencies you want to graph. 
+
 # Warning 
 
 - There's some bugs. I'm not a developper at all, I just do this as a hobby for my own needs. Feel free to fork it, submit some pull requests, whatever. 
