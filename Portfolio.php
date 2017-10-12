@@ -5,7 +5,7 @@
 ///////////////////////////////////////
 
 //////////////////////////////////////////////////////////////
-//////////			CONFIG			   				//////////
+//////////			CONFIG			//////
 //////////////////////////////////////////////////////////////
 $config = include('config.php');
 define('INFLUX_IP','127.0.0.1'); // The IP address of your InfluxDB instance
@@ -166,7 +166,7 @@ if($config['exchange_Bittrex'] == 'Enabled')
 		sendToDB('portfolio,currency='.$bittrex_currency.',exchange=bittrex value='.$bittrex_fiat_balance);
 
 		
-	//	$balances = $bittrex_currency." - " .$balance." / " .$bittrex_price_fiat."€ <br>";
+	//	$balances = $bittrex_currency." - " .$balance." / " .$bittrex_price_fiat."â‚¬ <br>";
 	//  echo $balances;
 	}
 
@@ -238,7 +238,7 @@ foreach($data as $obj => $currency)
 	$fiat_currency = strtolower($config['fiat_currency']);
 	$price_fiat = $json['price_'.$fiat_currency];	
 	}
-//	echo $currency." - " .$price_fiat."€<br>";
+//	echo $currency." - " .$price_fiat."â‚¬<br>";
 	sendToDB('assets,currency='.$currency.',exchange=CoinMarketCap value='.$price_fiat);
 }
 
