@@ -242,8 +242,6 @@ foreach($data as $obj => $currency)
 	sendToDB('assets,currency='.$currency.',exchange=CoinMarketCap value='.$price_fiat);
 }
 
-sendToDB('assets4,currency=HELLO,exchange=kraken value=5\r\nassets4,currency=BTC,exchange=hitbtc value=10');
-
 echo "Done !";
 
 
